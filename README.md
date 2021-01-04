@@ -54,6 +54,7 @@ This full stack app is a bike shop with full front end and back end CRUD with au
 - Deploy to back-end to Heroku.
 - Deploy to MongoDB database to MongoDB Atlas.
 - 50 commits or more. 
+- Utilize safe and effective branching and merging. 
 #### PostMVP
 
 ## Project Schedule

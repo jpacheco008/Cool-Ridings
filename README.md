@@ -5,7 +5,7 @@ URL: (TBD)
 ## Project Description
 This full stack app is a bike shop with full front end and back end CRUD with authentification. Users with admin privileges will be able to add/delete items and edit items information. 
 ## Wireframes
-
+![Wire Frame](https://puu.sh/H3Oqr/714b40e9e2.png)
 ## Component Hierarchy
 ![Hierarchy](https://whimsical.com/p3-cool-ridings-Bnpgg7oe9Rmf1qYppRyjvr)
 ## API and Data Sample

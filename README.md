@@ -38,7 +38,22 @@ This full stack app is a bike shop with full front end and back end CRUD with au
 ### MVP/PostMVP
 
 #### MVP
--
+- Documented Team Expectations Google Doc.
+- READ.md
+- Whimsical document
+- React app with 6 separate rendereed components in a organized understandable file structure.
+- Functional and class React components.
+- Use only React for DOM Manipulation.
+- Authentication, Landing screen, Listing screen, Detail Screen
+- Back-End: generic controller for full CRUD using Express, Mongoose, and MongoDB. 
+- Styling: using CSS and flexbox or CSS gird.
+- Responsive design 2 screens desktop and mobile.
+- Linting: indention, follow teams conventions kebab-case.
+- Remove boilerplate React files and code and console.log()s 
+- Deploy front-end to Netlify.
+- Deploy to back-end to Heroku.
+- Deploy to MongoDB database to MongoDB Atlas.
+- 50 commits or more. 
 #### PostMVP
 
 ## Project Schedule

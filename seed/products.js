@@ -7,131 +7,87 @@ const main = async () => {
   const products = 
   [
     {
-      "name" : "Hyper 20in Spinner BMX Bike, Gloss Black",
-      "imgURL":"https://i5.walmartimages.com/asr/51966ce0-5d08-460e-9dea-4620f104298c_1.e8221378b8e7501ce7d4b7d4937af674.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
-      "description":"This 20 Hyper Spinner Gloss Black BMX Bike is sure to capture the imagination of Kid who likes having fun outdoors. The soft seat will let you ride for hours, whether you're cruising around the neighborhood with friends, or to the park on a family bike ride.",
-      "price":"$98.00"
-    },
-    {
-      "name": "Boys Mountain Bike 24in Men's Bicycle Full Suspension Lightweight Aluminum Black, Aluminum",
-      "imgURL":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT1TrkT_4NeXy_LeGzE_Hkf9rzz4cr437Vb2WksLhQi2wUYsjV_Y0h25LZREmugiIFgScI_opHqUYsAv86oa7kYiSn-_ocBcg&usqp=CAY",
-      "description":"This Hyper Havoc Mountain Bike is the key to outdoor fun. It has a lightweight aluminum frame that lets users ride harder for longer, providing a reliable experience. The 24 inch Hyper Havoc is designed with a front and rear suspension to offer a smooth ride on any surface. It features 21 speeds, ensuring versatility in the ride. The boys mountain bike has a comfortable Shimano twist shifter and a Shimano rear derailleur, allowing riders to change the gears quickly and smoothly. It has alloy rims and front and rear linear pull brakes. This bike is made with standard pedals for a comfortable and secure ride. It has grips on the handlebars for sustained comfort and control. Additionally, the bike comes equipped with a plush MTB seat, so backsides will stay comfortable on long rides. It has a sleek, black design that provides a modern look. The bike can be ridden on a variety of surfaces, allowing for flexibility in where you go with it.",
-      "price":"$124.00"
-    },
-    {
-      "name": "Schwinn Addison 700c/28in City Hybrid Bike - Gray",
-      "imgURL":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTObKd8ezBtssSXMfcRZtv83MF8dxFB7WejgMlm5xFRi7EybDKOmAykQ8jtSdbi9UTgC11bubED95PF5_r9I1BdchpG2uhkqIu0PotJ6a_p29xZshFJWRRP9g&usqp=CAY",
-      "description":"From everyday rides to weekend excursions, enjoy it all with the Schwinn Addison. The Addison features a lightweight aluminum frame, perfect for a fast and agile ride around the neighborhood or bike path. The Shimano 7-speed twist shifters with Shimano rear derailleur provide precise gear changes that let you adapt to your terrain. Alloy linear pull brakes let you stop with confidence, while the alloy crank with built-in chain guard protect your pant legs as you ride. Experience the versatility of the Addison and enjoy the freedom of riding a Schwinn.",
-      "price":"$249.99"
-    },
-    {
-      "name": "Huffy 24 Rock Creek Girls Mountain Bike for Women",
-      "imgURL":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTriyChauOFELo8DXYfKDhdsk2dsC0YkHA0pawb5XF8YvSqn7z7kGdxdurmKKWA1JCtI-drPIgDhitARvpz7NSbfv76052PsL7T1rxr0pi4GHhWf9l7gXCz1A&usqp=CAY",
-      "description":"Ideal for ages 13 to Adult (Average height, 4'8 inch - 5' 8 inch) The Huffy 24 inch Rock Creek Mountain bike combines a durable steel frame and great style with the right specs to have a blast over bumps on paved trails or rides around the neighborhood. Smooth 18-speed index shifting and Shimano rear derailleur deliver a solid ride. The front suspension responds as you ride for better control over curbs, potholes and branches. Front and rear linear pull brakes provide consistent, dependable control. The comfortable slim ATB saddle includes an alloy quick-release seat binder for easy adjustments to the right height, or to simply remove when needed. Kraton grips add comfort for a great hold while you enjoy the great ride of the Huffy Rock Creek.",
-      "price":"$98.00"
-    },
-    {
-      "name": "Nishiki Men's Pueblo 26'' Mountain Bike",
-      "imgURL":"https://dks.scene7.com/is/image/GolfGalaxy/15NISANSHKPBL14XXRMB_Black_Grey_Volt?qlt=70&wid=1100&fmt=webp",
-      "description":"Experience excellent performance and an awesome ride with the Nishiki® Men's Pueblo Mountain Bike. Made with a heat treated steel frame and 60mm travel fork, this mountain bike boasts maximum durability and shock absorption. Its 26in wheels and aluminum rims can tackle tough terrain, while the Shimano drivetrain can conquer big ascents and downhill slopes.",
-      "price":"$279.99"
-    },
-    {
-      "name": "Hyper 26in Havoc Men's Mountain Bike Black",
-      "imgURL":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR58iEMbxp3QGoMXqwq6LYMskut2C1Ldiq8UGMjBk2T4iWKBoFtsppwvxai-4iaTJMmdrs5gkP6EFE713-oCfNEYEuP5W6rVr3j00C3NTBmgN__VH680si-&usqp=CAY",
-      "description":"This Hyper Havoc Mountain Bike is the key to outdoor fun. It features 21 speeds, ensuring versatility in the ride. It also features a three-piece, high-performance crank. This bike is made with standard pedals for a comfortable and secure ride.",
-      "price":"$124.00"
-    },
-    {
-      "name": "Hyper 26in Shocker Men's Dual Suspension Mountain Bike Black",
-      "imgURL":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTF5Kb2lxFWYQIvRMG-q3rfShf6h6pOdyAEybDHDPgwxle1UoDS7HDpeNoqLWd3qzcVwLKQNX-DfjkDhqsRR3MN_nFo3ZuCMgCI-6220j7RHuSG8XHrF0q1&usqp=CAY",
-      "description":"It features a solid suspension steel outline, a suspension front fork and ground-breaking direct draw front and back brakes, so it's prepared to go up against any enterprise. The bumpy tires and the simple to-utilize, 18-speed curve grasp moving make it perfect for cruising in the recreation center or hitting the back trails.",
-      "price":"$124.00"
-    },
-    {
       "name": "Co-op Cycles CTY 1.1 Bike",
       "imgURL":"https://www.rei.com/media/5a2854a8-bae4-4c9f-835b-e091799826ba?size=784x588",
-      "description":"When you have to zip across campus several times a day, you don’t have extra time to spend keeping your ride in shape. This reliable, low-maintenance bike will get you where you need to go with no extra fuss.",
+      "imgURL1": "https://www.rei.com/media/6f0c5367-9ffe-48be-a085-3ad326b8b041?size=784x588",
+      "imgURL2": "https://www.rei.com/media/94acdaf1-4df1-4e32-a441-5ab0f062a3e2?size=784x588",
+      "imgURL3": "https://www.rei.com/media/aff28326-23a2-43a8-bcc6-91b79105dc1c?size=784x588",
+      "description": "When you have to zip across campus several times a day, you don’t have extra time to spend keeping your ride in shape. This reliable, low-maintenance bike will get you where you need to go with no extra fuss.",
       "price":"$549.00"
     },
     {
-      "name": "2021 Polygon Cascade 2 - 27.5 Mountain Bike - Size: Medium",
+      "name": "2021 Polygon Cascade 2 - 27.5 Mountain Bike",
       "imgURL":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQNy3RAce8bwkkwupXkzFC5KdTjenax63lHInJl8HsvFbRAL1fGv-FcqAxqsfBpqBqVKhcRNRZh14fpmJC4h0I0cOAnOzvFnuN8xO7pkcmD&usqp=CAY",
+      "imgURL1": "https://www.polygonbikes.com/wp-content/uploads/2018/03/CASCADE-2-LR.png",
+      "imgURL2": "https://www.polygonbikes.com/wp-content/uploads/2018/03/CASCADE-2-RB.png",
       "description": "The Cascade 2 is the perfect gateway to trail riding. It's ideal for new riders who want a mountain bike with knobby tires that can double as a rugged commuter. Disc brakes, front suspension, 21 speeds and mounts for a rack and mudguards make this versatile ride an excellent entry point for new trail riders and commuters alike. Utilizing a new hydroformed lightweight Alutech XC Sport 27.5in Aluminum frame that was used on highly popular Polygon Premier series from previous years, the Cascade 2 is now one of the lightest mountain bikes in its category on the market. The bike features a Shimano 3 x 7-Speed drivetrain that will allow to comfortably spin your way up climbs while providing plenty of gears to charge back down. A 100mm travel SR Suntour XCE does a good job of easing trail chatter to provide a smooth and confident ride .",
       "price":"$399.00"
     },
     {
       "name": "Nishiki Men's Anasazi Hybrid Bike",
-      "imgURL":"https://dks.scene7.com/is/image/GolfGalaxy/16NISANSHKNSZ15XXDSB_Red_Grey_Black?qlt=70&wid=1100&fmt=webp",
+      "imgURL": "https://dks.scene7.com/is/image/GolfGalaxy/16NISANSHKNSZ15XXDSB_Red_Grey_Black?qlt=70&wid=1100&fmt=webp",
+      "imgURL1": "https://dks.scene7.com/is/image/GolfGalaxy/NKI00707_RedGreyBlack_DET-alt1?wid=1500&fmt=pjpeg",
+      "imgURL2": "https://dks.scene7.com/is/image/GolfGalaxy/NKI00707_RedGreyBlack_DET?wid=1500&fmt=pjpeg",
+      "imgURL3":"https://dks.scene7.com/is/image/GolfGalaxy/NKI00707_RedGreyBlack_SDER?wid=1500&fmt=pjpeg",
       "description":"Whether you're commuting to class or trekking on narrow singletracks, experience it all with the Nishiki® Men's Anasazi Hybrid Bike. Built with a durable aluminum frame, this bike cruises with stability. The reliable 700C wheels withstand terrain from rocky roads to smooth pavement, while the disc brakes deliver optimum stopping control.",
       "price":"$429.99"
     },
     {
-      "name": "Schwinn Women's Legacy 26in Cruiser Bike- Blue/White",
-      "imgURL":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTH6ncAFJhIEQsGYVLxocZmMRxmAeicBgYAlHU4735f1qBEc96dZ8hkhUEfJts8_pTaY5nJC2KbU9r8D63gJ8RMpVuxPfVbe316_JHp0lFykuaMHmlXn-BG&usqp=CAY",
-      "description":"*Free assembly for all store and order pick up purchases for bikes 20in and up! A sweet ride on a sweet bike. Comfort is there with a spring seat and upright riding position. The look is there with matching fenders, seat and chain cover. And the easy is there with no gears or cables to worry about. Easy simple and fun.",
-      "price":"$169.99"
+      "name": "SystemSix Hi-MOD Dura Ace Di2",
+      "imgURL":"https://embed.widencdn.net/img/dorelrl/juskodwpyr/2000px@1x/C20_C11100M_SystemSix_HM_D_A_Di2_BBQ_PD.png",
+      "imgURL1": "https://embed.widencdn.net/img/dorelrl/rqd6lkixsl/2000px@1x/C20_C11100M_SystemSix_HM_D_A_Di2_BBQ_D3.png",
+      "imgURL2": "https://embed.widencdn.net/img/dorelrl/mr7woapxvh/2000px@1x/C20_C11100M_SystemSix_HM_D_A_Di2_BBQ_3Q.png",
+      "imgURL3": "https://embed.widencdn.net/img/dorelrl/qw5s5g5p19/2000px@1x/C20_C11100M_SystemSix_HM_D-A_Di2_BBQ_D1.png",
+      "description": "Faster everywhere. The fastest UCI-legal road bike in the world. More speed with less effort. Simple as that.",
+      "price":"$12,000"
     },
     {
-      "name": "Schwinn Loop 20in Folding Bike Black",
-      "imgURL":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQVi6Eiuq5npDJWHMYHYvX7_28AtKKs6lp_nXCABlcDNZoLsVCzFcc4dK7g3Antx8yeyTmNSVPzcTZilxVp2v1DGEw2tkNBAdi-QmdwHe1SCD7R74dPBHS3&usqp=CAY",
-      "description":"Discover the convenience and utility of the Schwinn Loop Adult Folding Bicycle. Perfect for commuting, this bike features a kickstand and durable steel hinges. The rear carry rack and an included nylon carry bag keep the bike protected and concealed; Perfect for commuting, this bike features a kickstand and durable steel hinges.",
-      "price":"$245.95"
-    },
-    {
-      "name": "Murtisol Mountain Bike 26 -in Wheels 21 Speed Double V-Brake Aluminum Frame",
-      "imgURL":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQpaJhJ--zLmY1qzHS4py8oyVF5STwElx5SR4uKrsAl_Vw4PkecUhu7W4XDzHoG5JsFcsWhSAwfyAYfSJ-5qc4LBA_vDeB6nKM0Bgo329lvHNTRTGppPt8V&usqp=CAE",
-      "description":"Murtisol mountain bike is equipped with an all-aluminum frame and aluminum ring, without fear of sun and rain, and no rust for 365 days; The design of outer decals and polished silver edges make the bicycle more beautiful; with Shimano gear shift components 21-speed gear, you can easily change the speed according to different terrain, the seat height can be adjusted and the wide and comfortable seat makes your riding more comfortable.",
-      "price":"$199.99"
-    },
-    {
-      "name": "Adult Tricycle - Three Wheel Cruiser Bikes - Trike Bike for Seniors Women & Family - Vegetable Basket Car | Manpower Tricycle with Cargo Basket for Seniors, Family | Leisure Picnics & Shopping",
-      "imgURL":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRm04ngebSp6SeerQZJit448q1SGx2TIILlrM6R4F4aUNAG1M5GM2jzkoghiyJ6EwGrsPAu4RANRmPf3T6hswxQ3PT8Z-TPNhdMXrYbGVMK&usqp=CAE",
-      "description":"No longer need to worry about riding a lot of items. This bicycle with a large back basket can hold many vegetables, fruits and more. Ideal for picnics, shopping, entertainment, etc.",
-      "price":"$235.55"
-    },
-    {
-      "name": "EUNORAU 48V750W MAX-CARGO electric long trail Cargo bike for family Wagon or Ubereats delivery Using",
-      "imgURL":"https://cdn.shopify.com/s/files/1/2389/5887/products/MAX-CARGO--4_1800x1800.jpg?v=1597906755",
-      "description":"no description",
-      "price":"$1,759.00"
-    },
-    {
-      "name": "Hyper E-Ride Electric Mountain Bike, 26 inch Wheels, 36 Volt battery, Black",
+      "name": "Hyper E-Ride Electric Mountain Bike",
       "imgURL":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRXCgLc1kd5216bL_I9fCC4uQF--rj8IyZdjzW0n4pQ-3OGOqvQ5do7r9VA7lr_ZjzglNA0bO3cxl4dd4XVnYChCtoh8E2s&usqp=CAY",
-      "description":"Hyper Bicycles 26in E-ride Electric Mountain Bike: Ride in style with the Hyper E-Ride Electric Hybrid Bike, 36V Battery. It features a Shimano grip shifter and rear derail leur gear system. This 26in electric bike includes front and rear V-brakes for enhanced stopping power and front suspension forks for a comfortable ride",
+      "imgURL1": "https://hypertoys.com/wp-content/uploads/2019/02/26in_Hyper_E-Ride_Mountain_MTB_1-600x600.jpg",
+      "imgURL2": "https://hypertoys.com/wp-content/uploads/2019/02/26in_Hyper_E-Ride_Mountain_MTB_7-600x600.jpg",
+      "imgURL3": "https://hypertoys.com/wp-content/uploads/2019/02/26in_Hyper_E-Ride_Mountain_MTB_5-600x600.jpg",
+      "description": "Hyper Bicycles 26in E-ride Electric Mountain Bike: Ride in style with the Hyper E-Ride Electric Hybrid Bike, 36V Battery. It features a Shimano grip shifter and rear derail leur gear system. This 26in electric bike includes front and rear V-brakes for enhanced stopping power and front suspension forks for a comfortable ride",
       "price":"$808.78"
     },
     {
       "name": "Super73-Z1 Electric Bike Jet Black",
       "imgURL":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSXw93NuOKd9fHR7zdHaEoGGctOHkX4pUAhFX6mKkKaQAQDfIy0dWQZwg1i5_j7xRZxRac31fooGlo0015VKf4SxUnV8VGcRKunzltT3XFWGEo-wWM7DuwN&usqp=CAY",
-      "description":"The SUPER73-Z1 is a friendly entry-level electric motorbike that packs a punch. The compact frame and 500 watt internal hub motor is an excellent vehicle for anyone wanting the feel of a SUPER73 in a smaller package. This neighborhood explorer is perfect for getting around town.",
+      "imgURL1": "https://cdn.shopify.com/s/files/1/1374/3231/products/Super73_Z1_SLft_Black_1200x800_31055142-14bd-4364-81f0-9c0bfb54b939_1024x1024.jpg?v=1588429565",
+      "imgURL2": "https://coolmaterial.com/wp-content/uploads/2019/12/Lithium-Cycles-Super-73-Z1-Lightweight-E-Bike-4.jpg",
+      "imgURL3": "https://coolmaterial.com/wp-content/uploads/2019/12/Lithium-Cycles-Super-73-Z1-Lightweight-E-Bike-6-1000x600.jpg",
+      "description": "The SUPER73-Z1 is a friendly entry-level electric motorbike that packs a punch. The compact frame and 500 watt internal hub motor is an excellent vehicle for anyone wanting the feel of a SUPER73 in a smaller package. This neighborhood explorer is perfect for getting around town.",
       "price":"$1260.00"
-    },
-    {
-      "name": "Giro Adult Revel Bike Helmet",
-      "imgURL":"https://dks.scene7.com/is/image/GolfGalaxy/16GIRARVLXXXXXXXXDLT_Pearl_White_Silver?qlt=70&wid=1100&fmt=webp",
-      "description":"Whether you’re commuting downtown or winding trails, the Giro® Revel Bike Helmet is up to the task. Designed with a full coverage polycarbonate shell and 22 vents, the Revel delivers superior protection and ventilation. Its Acu Dial™ Fit system has a full fit band that can be adjusted with one hand mid-ride if necessary. The snap fit visor reduces glare as you ascend downhill. The Revel is the perfect complement to any ride.",
-      "price":"$39.99"
-    },
-    {
-      "name": "Safety Windproof Bicycle Helmet Adult Mountain Bike Fit Outdoor Helmet",
-      "imgURL":"https://i5.walmartimages.com/asr/30e4267a-8500-4869-8a3c-247e05d0cb0f.8ece16de99e8978e35b819d40c57c97a.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
-      "description":"Helmet",
-      "price":"$19.99"
-    },
-    {
-      "name": "Schwinn Intercept Adult Bicycle Helmet, ages 14 and up, Blue",
-      "imgURL":"https://i5.walmartimages.com/asr/5733415a-70b8-490d-8090-561a1ac85045_1.08c10b4ae93ace8bbabec5e9d6f16e28.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff",
-      "description":"The Schwinn Intercept Adult Helmet makes your ride safer and more fun. It has all the advanced features you expect in a professional grade bike helmet, yet it is also easy to wear. This adult bike helmet is ideal for cycling enthusiasts and weekend riders. The Intercept has a very sleek design that helps makes riding less work and more fun. Schwinn is a name that you've known and trusted for years, and this helmet does not disappoint. The Schwinn Intercept helmet features the adjustable dial fit system to help ensure a custom and comfortable fit. It also has a convenient snap on and off visor to shield your eyes from the sun or other outdoor elements, along with heat sealed pads for extra comfort. The adult bike helmet also features 10 separate vents to circulate the air and keep the rider's head cooler, even in hot weather. Protect your head in style with the Intercept Adult Helmet by Schwinn.",
-      "price":"$19.96"
-    },
+    },   
     {
       "name": "Bell Servo Adult Full Face Helmet Matte Black",
-      "imgURL":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRIH13yS5vdIxBd6IgOzNshmdZih_rLyqNNuUoNCIfs7h-yG5kqq_V72Tm2m33zvRTopFUxODeT-8iJTuJam4LiwbM5IKLeHTPbo_S_G81OyuKKkw5fC35DNg&usqp=CAY",
+      "imgURL": "https://images-na.ssl-images-amazon.com/images/I/71dXXz0hknL._AC_SL1500_.jpg",
+      "imgURL1": "data:image/jpeg;base64,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",
+      "imgURL2": "https://i5.walmartimages.com/asr/1e79dc7c-cd4d-47ff-b39e-ab22022b3c2a_1.c677f1f26579a55bb299cc167f8c9331.jpeg",
       "description":"The Bell Servo Full Face Helmet is designed to provide maximum protection and safety whether on an off-road trail, BMX competition, or cruising the city streets. It features full-coverage plush interior padding, removable and washable cheek pads, as well as a comfortable neck roll for increased padding and protection. This full-face bike helmet not only covers your head, it covers the chin and jaw, as well. It comes with an integrated ventilation system that helps keep you from overheating. Complies with the U.S. CPSC Safety Standard for Bicycle Helmets for Persons Age 5 and Older. Not approved for use with motorized bikes. For ages 14+. Fits head sizes 22.8-24â (58-61cm).",
       "price":"$59.99"
-    }
+    },
+    {
+      "name": "Mt. Hood Gloss w/MIPS",
+      "imgURL": "https://cdn.shopify.com/s/files/1/0228/2851/products/NC20_ST_Mthood_Angle..jpg?v=1593046199",
+      "imgURL2": "https://cdn.shopify.com/s/files/1/0228/2851/products/NC20_ST_Mthood_Rear_1024x1024.jpg?v=1593046222",
+      "description":"New for 2020, the Street collection combines the industry leading safety feature MIPS with all new Nutcase inspiring designs.  Featuring an improved retention system to provide a secure, comfortable fit and 2x the reflectivity for visibility on the road.   11 redesigned air vents increase the airflow to keep your brain cool and 30+ new designs to keep you looking even cooler.",
+      "price":"$79.99"
+    },
+    {
+      "name": "Rapha Deep Winter Gloves",
+      "imgURL": "https://i8.amplience.net/i/rapha/PWG01XX_BLK_Product_H219_01",
+      "imgURL2": "https://img.smartpak.com/images/product/highres/19807_pair.jpg",
+      "description":"The Deep Winter Gloves are the warmest pair we make, tested extensively in wet and cold weather in Norway and designed to withstand the most extreme riding conditions. For complete integration with the sleeves of your jacket, the gloves feature a two-layer cuff design. A slim-fitting knitted merino cuff slides beneath the jacket sleeve while the long exterior cuff forms a protective outer layer on top. The main body of the glove is sealed with a fully waterproof yet breathable membrane and lined with a warm fleece fabric on the inside. Insulation is positioned on the back of the hand for additional warmth while the fingers are pre-shaped for improved dexterity and articulation while braking and shifting. The palm is constructed of a hard-wearing, abrasion-resistant leather with carefully positioned gel padding for a comfortable, secure grip on the handlebars, whatever the weather. A grosgrain puller tab on the inner cuff makes putting the glove on easy while the thumb incorporates a convenient nose wipe. For visibility when signalling, a reflective panel is positioned on the little finger.",
+      "price":"$190.00"
+    },
+    {
+      "name": "Rechargeable Lighted Gloves",
+      "imgURL": "https://images.ctfassets.net/5lo27vrr3lb5/12h9vWyLcbE1boy70P87W2/e2ef957a10815203ff787959b47ef366/207394-p1.jpg?q=80",
+      "imgURL2": "https://images.ctfassets.net/5lo27vrr3lb5/79HmpA49grFP7Oo41imxcN/25c9627f9499848561aeef15cb41768a/207394-p2.jpg?q=80",
+      "description":"Rechargeable Lighted Gloves are the hands-free wearable safety lights for runners, cyclists, dog walkers, hikers, campers and others who are active after dark. Each glove has a Velcro pocket that securely holds a rechargeable LED light, providing a 270° radial arc of light that’s visible up to a half mile away. Lights last 8 to 10 hours on a full charge. Set includes two gloves, two lights and a dual USB charging cable. Unisex design, available in Black in Small, Medium, Large and XL.",
+      "price":"$59.99"
+    },
     ]
   await Product.insertMany(products)
   console.log("Created products")

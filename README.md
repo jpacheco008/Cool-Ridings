@@ -7,7 +7,7 @@ This full stack app is a bike shop with full front end and back end CRUD with au
 ## Wireframes
 ![Wire Frame](https://puu.sh/H3Oqr/714b40e9e2.png)
 ## Component Hierarchy
-![Hierarchy](https://github.com/jpacheco008/Cool-Ridings/blob/development/P3%20Cool%20Ridings.png)
+![Hierarchy](https://github.com/jpacheco008/Cool-Ridings/blob/development/P3%20Cool%20Ridings%402x.png)
 ## API and Data Sample
 ```
 {

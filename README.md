@@ -3,12 +3,19 @@
 URL: (TBD)
 
 ## Project Description
-This full stack app is a bike shop with full front end and back end CRUD with authentification. Users with admin privileges will be able to add/delete items and edit items information . 
+
+This full stack app is a bike shop with full front end and back end CRUD with authentification. Users with admin privileges will be able to add/delete items and edit items information .
+
 ## Wireframes
+
 ![Wire Frame](https://puu.sh/H3Oqr/714b40e9e2.png)
+
 ## Component Hierarchy
+
 ![Hierarchy](https://github.com/jpacheco008/Cool-Ridings/blob/development/P3%20Cool%20Ridings%402x.png)
+
 ## API and Data Sample
+
 ```
 {
 	“name”: “Adult Tricycle - Three Wheel Cruiser Bikes - Trike Bike for Seniors Women & Family - Vegetable Basket Car | Manpower Tricycle with Cargo Basket for Seniors, Family | Leisure Picnics & Shopping”,
@@ -35,9 +42,11 @@ This full stack app is a bike shop with full front end and back end CRUD with au
 	“price”:”$1260.00”
 }
 ```
+
 ### MVP/PostMVP
 
 #### MVP
+
 - Documented Team Expectations Google Doc.
 - READ.md
 - Whimsical document
@@ -45,18 +54,38 @@ This full stack app is a bike shop with full front end and back end CRUD with au
 - Functional and class React components.
 - Use only React for DOM Manipulation.
 - Authentication, Landing screen, Listing screen, Detail Screen
-- Back-End: generic controller for full CRUD using Express, Mongoose, and MongoDB. 
+- Back-End: generic controller for full CRUD using Express, Mongoose, and MongoDB.
 - Styling: using CSS and flexbox or CSS gird.
 - Responsive design 2 screens desktop and mobile.
 - Linting: indention, follow teams conventions kebab-case.
-- Remove boilerplate React files and code and console.log()s 
+- Remove boilerplate React files and code and console.log()s
 - Deploy front-end to Netlify.
 - Deploy to back-end to Heroku.
 - Deploy to MongoDB database to MongoDB Atlas.
-- 50 commits or more. 
-- Utilize safe and effective branching and merging. 
+- 50 commits or more.
+- Utilize safe and effective branching and merging.
+
 #### PostMVP
 
+- Show less/more for item descriptions
+- Multiple pictures?
+- Add to cart
+- Rating / leave comment
+- discount code
+- accessories
+- Features for the bikes
+- Distinguish between admin and user
+
 ## Project Schedule
+
+- Monday (project approved, make the skeleton)
+- Tuesday (build and deploy the back-end, start Auth)
+- Wednesday (start client side, client side Auth)
+- Thursday (MVP)
+- Friday (styling)
+- Saturday (styling)
+- Sunday (post MVP/debugging)
+- Monday (post MVP/debugging)
+- Tuesday (presenting)
 
 ## Timeframes

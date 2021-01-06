@@ -70,7 +70,7 @@ const SignUp = (props) => {
                     placeholder="Enter username"
                     onChange={handleChange}
                 />
-                <lable>Email address</lable>
+                <label>Email address</label>
                 <input
                     required
                     type="email"
@@ -79,16 +79,16 @@ const SignUp = (props) => {
                     placeholder="Enter email"
                     onChange={handleChange}
                 />
-                <lable>Password</lable>
+                <label>Password</label>
                 <input
                     required
                     name="password"
                     value={password}
-                    type="plassword"
+                    type="password"
                     placeholder="Password"
                     onChange={handleChange}
                 />
-                <lable>Password Confirmation</lable>
+                <label>Password Confirmation</label>
                 <input
                     required
                     name="passwordConfirmation"

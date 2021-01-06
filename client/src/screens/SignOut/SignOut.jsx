@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { singOut } from "../../services/users";
+import { signOut } from "../../services/users";
 import { useHistory } from "react-router-dom";
 
 const SignOut = (props) => {
@@ -7,7 +7,7 @@ const SignOut = (props) => {
   const history = useHistory();
 
   useEffect(() => {
-    singOut(user)
+    signOut(user)
       .then(() => clearUser())
       .finally(() => history.push("/"));
   }, [history, clearUser, user]);

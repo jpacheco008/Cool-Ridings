@@ -10,4 +10,4 @@ router.post("/", restrict, controllers.createProduct)
 router.put("/:id", restrict, controllers.updateProduct)
 router.delete("/:id", restrict, controllers.deleteProduct)
 
-modules.export = router
+module.exports = router

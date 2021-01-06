@@ -13,7 +13,7 @@ export const signUp = async credentials => {
 }
 export const signIn = async credentials => {
   try {
-    const response = api.post('/sign-in', credentials)
+    const response = await api.post('/sign-in', credentials)
     localStorage.setItem('token', response.data.token)
     const user = jwtDecode(response.data.token)
     return user

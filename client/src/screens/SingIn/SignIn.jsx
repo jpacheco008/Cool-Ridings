@@ -2,7 +2,7 @@ import { useState } from "react";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 
-const signIn = (props) => {
+const SignIn = (props) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
@@ -12,24 +12,24 @@ const signIn = (props) => {
     errorMsg: "",
   });
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setForm({
       ...form,
       [event.target.name]: event.target.value,
     });
   };
 
-  const onSignIn = (event) => {
+  const onSignIn = event => {
     event.preventDefault();
 
     const { setUser } = props;
 
     signIn(form)
-      .then((user) => {
+      .then(user => {
         setUser(user);
       })
       .then(() => history.push("/"))
-      .catch((error) => {
+      .catch(error => {
         console.error(error);
         setForm({
           isError: true,
@@ -76,10 +76,10 @@ const signIn = (props) => {
           placeholder="Password"
           onChange={handleChange}
         />
-        {renderError}
+        {renderError()}
       </form>
     </div>
   );
 };
 
-export default signIn;
+export default SignIn;

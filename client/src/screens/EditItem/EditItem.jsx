@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Redirect } from "react-router-dom";
 import "./EditItem.css";
 import Layout from "../../components/shared/Layout/Layout";
-import { getProducts, updateProduct } from "../../services/products";
+import { getProduct, updateProduct } from "../../services/products";
 
 const EditItem = (props) => {
   const [item, setItem] = useState({
@@ -11,34 +11,53 @@ const EditItem = (props) => {
     price: "",
     description: "",
   });
+  const [isUpdated, setIsUpdated] = useState(false);
 
   let { id } = useParams();
 
   useEffect(() => {
     const fetchItem = async () => {
-      const item = await getProducts(id);
+      const item = await getProduct(id);
       setItem(item);
     };
     fetchItem();
   }, [id]);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setItem({
+      ...item,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const submitUpdate = await updateProduct(id, item);
+    setIsUpdated(submitUpdate);
+  };
+
+  if (isUpdated) {
+    return <Redirect to={`/products/${id}`} />;
+  }
+
   return (
     <Layout user={props.user}>
       <div className="edit-box">
         <div className="image-box">
-          <img src={item.imgURL} alt={item.name} />
-          <form>
+          <img className="edit-img" src={item.imgURL} alt={item.name} />
+          <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image"
               placeholder="Image Link"
               value={item.imgURL}
               name="imgURL"
               required
-              // onChange={}
+              onChange={handleChange}
             />
           </form>
         </div>
-        <form className="edit-form">
+        <form className="edit-form" onSubmit={handleSubmit}>
           <input
             className="edit-name"
             placeholder="Name"
@@ -46,10 +65,28 @@ const EditItem = (props) => {
             name="name"
             required
             autoFocus
-            // onChange={}
+            onChange={handleChange}
           />
-          <input className="edit-price" placeholder="Price" />
-          <textarea />
+          <input
+            className="edit-price"
+            placeholder="Price"
+            placeholder="Price"
+            value={item.price}
+            name="price"
+            required
+            onChange={handleChange}
+          />
+          <textarea
+            className="edit-description"
+            placeholder="Description"
+            value={item.description}
+            name="description"
+            required
+            onChange={handleChange}
+          />
+          <button type="submit" className="submit-button">
+            Save Changes
+          </button>
         </form>
       </div>
     </Layout>

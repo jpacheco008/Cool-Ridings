@@ -6,6 +6,7 @@ import SignUp from "./screens/SignUp/SignUp";
 import Home from "./screens/Home/Home";
 import List from './screens/List/List'
 import Details from './screens/Details/Details'
+import AddItem from './screens/AddItem/AddItem'
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/users";
 
@@ -38,10 +39,10 @@ function App() {
           <SignOut setUser={setUser} clearUser={clearUser} />
         </Route >
         <Route exact path='/products'>
-          <List user={user}/>
+          <List user={user} />
         </Route>
         <Route exact path="/products/:id">
-          <Details user={user}/>
+          <Details user={user} />
         </Route>
       </Switch>
     </div>

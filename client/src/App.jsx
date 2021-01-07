@@ -9,7 +9,6 @@ import Details from './screens/Details/Details'
 import AddItem from './screens/AddItem/AddItem'
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/users";
-import AddItem from './screens/AddItem/AddItem'
 import EditItem from './screens/EditItem/EditItem'
 
 function App() {

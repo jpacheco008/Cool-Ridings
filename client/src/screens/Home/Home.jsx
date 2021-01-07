@@ -1,9 +1,8 @@
-
-
+import Layout from '../../components/shared/Layout/Layout'
 const Home = (props) => {
   return (
     <div>
-        Corey in the house
+      <Layout />
     </div>
   )
 }

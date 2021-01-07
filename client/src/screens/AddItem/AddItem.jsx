@@ -43,7 +43,7 @@ const AddItem = (props) => {
                     name="name"
                     value={product.name}
                     onChange={handleChange}
-                    placeholder="hame" />
+                    placeholder="name" />
 
                 <input
                     type="text"

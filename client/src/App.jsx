@@ -45,7 +45,7 @@ function App() {
         <Route exact path="/products/:id">
           <Details user={user} />
         </Route>
-        <Route path="add-product">
+        <Route path="/add-products">
           {user ? <AddItem user={user} /> : <Redirect to="/sign-in" />}
         </Route>
         <Route exact path="/products/:id/edit">

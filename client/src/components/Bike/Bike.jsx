@@ -6,8 +6,10 @@ const Bike = (props) => {
     <>
       <Link className="product" to={`/products/${props._id}`}>
         <img className="product-image" src={props.imgURL} alt={props.name} />
+        <div className='details-container'>
         <div className="product-name">{props.name}</div>
         <div className="price">{props.price}</div>
+        </div>
       </Link>
     </>
   );

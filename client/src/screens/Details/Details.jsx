@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
-import "./Details.css";
-// import Layout from '../../components/shared/Layout/Layout'
-import { getProduct, deleteProduct } from "../../services/products";
-import { useParams, Link } from "react-router-dom";
+
+import { useState, useEffect } from 'react'
+import './Details.css'
+import Layout from '../../components/shared/Layout/Layout'
+import { getProduct, deleteProduct } from '../../services/products'
+import { useParams, Link } from 'react-router-dom'
+
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -23,34 +25,23 @@ const ProductDetail = (props) => {
   }
 
   return (
-    // <Layout user={props.user}>
-    <div className="product-detail" user={props.user}>
-      <div className="name">{product.name}</div>
-      <img
-        className="product-detail-image"
-        src={product.imgURL}
-        alt={product.name}
-      />
-      <div className="price">{product.price}</div>
-      <div className="details">
-        <div>{product.description}</div>
-        <div className="buttons">
-          <button className="edit-button">
-            <Link className="edit-link" to={`/products/${product._id}/edit`}>
-              Edit
-            </Link>
-          </button>
-          <button
-            className="delete-button"
-            onClick={() => deleteProduct(product.id)}
-          >
-            Delete
-          </button>
+    
+    <Layout user={props.user}>
+      <div className="product-detail">
+        <div className='name'>{product.name}</div>
+        <img className="product-detail-image" src={product.imgURL} alt={product.name} />
+        <div className="price">{product.price}</div>
+        <div className='details'>
+          <div>{product.description}</div>
+          <div className='buttons'>
+            <button className='edit-button'><Link className='edit-link' to={`/products/${product.id}/edit`}>Edit</Link></button>
+            <button className='delete-button' onClick={() => deleteProduct(product.id)}>Delete</button>
+          </div>
         </div>
       </div>
-    </div>
-    // {/* </Layout> */}
-  );
-};
+     </Layout>
+  )
+}
+
 
 export default ProductDetail;

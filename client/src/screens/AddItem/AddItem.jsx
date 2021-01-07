@@ -52,7 +52,12 @@ const AddItem = (props) => {
                     onChange={handleChange}
                     placeholder="image" />
 
-                <input type="text" name="price" value={product.price} onChange={handleChange} placeholder="Price" />
+                <input
+                    type="text"
+                    name="price"
+                    value={product.price}
+                    onChange={handleChange}
+                    placeholder="Price" />
 
                 <textarea
                     type="text"

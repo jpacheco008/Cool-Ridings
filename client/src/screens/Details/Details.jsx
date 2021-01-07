@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Details.css'
-// import Layout from '../../components/shared/Layout/Layout'
+import Layout from '../../components/shared/Layout/Layout'
 import { getProduct, deleteProduct } from '../../services/products'
 import { useParams, Link } from 'react-router-dom'
 
@@ -24,8 +24,8 @@ const ProductDetail = (props) => {
   }
 
   return (
-    // <Layout user={props.user}>
-      <div className="product-detail" user={props.user}>
+    <Layout user={props.user}>
+      <div className="product-detail">
         <div className='name'>{product.name}</div>
         <img className="product-detail-image" src={product.imgURL} alt={product.name} />
         <div className="price">{product.price}</div>
@@ -37,7 +37,7 @@ const ProductDetail = (props) => {
           </div>
         </div>
       </div>
-    // {/* </Layout> */}
+     </Layout>
   )
 }
 

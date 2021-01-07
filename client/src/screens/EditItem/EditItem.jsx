@@ -27,18 +27,18 @@ const EditItem = (props) => {
       <div className="edit-box">
         <div className="image-box">
           <img src={item.imgURL} alt={item.name} />
-          <form onSubmit={}>
+          <form>
             <input
               className="edit-input-image"
               placeholder="Image Link"
               value={item.imgURL}
               name="imgURL"
               required
-              onChange={}
+              // onChange={}
             />
           </form>
         </div>
-        <form className="edit-form" onSubmit={}>
+        <form className="edit-form">
           <input
             className="edit-name"
             placeholder="Name"
@@ -46,7 +46,7 @@ const EditItem = (props) => {
             name="name"
             required
             autoFocus
-            onChange={}
+            // onChange={}
           />
           <input className="edit-price" placeholder="Price" />
           <textarea />
@@ -55,3 +55,5 @@ const EditItem = (props) => {
     </Layout>
   );
 };
+
+export default EditItem;

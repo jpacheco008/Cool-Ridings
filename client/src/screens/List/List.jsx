@@ -2,19 +2,31 @@ import "./List.css";
 import { useState, useEffect } from "react";
 import Bike from "../../components/Bike/Bike";
 import { getProducts } from "../../services/products";
+import Search from "../../components/Search/Search";
+import Layout from "../../components/shared/Layout/Layout";
 
 const List = (props) => {
   const [allProducts, setAllProducts] = useState([]);
+  const [quieredProducts, setQuieredProducts] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getProducts();
       setAllProducts(products);
+      setQuieredProducts(products);
     };
     fetchProducts();
   }, []);
 
-  const mappedProducts = allProducts.map((product, index) => (
+  const handleSearch = (event) => {
+    const newQueriedProducts = allProducts.filter((product) =>
+      product.name.toLowerCase().includes(event.target.value.toLowerCase())
+    );
+    setQuieredProducts(newQueriedProducts);
+  };
+  const handleSubmit = (event) => event.preventDefault();
+
+  const mappedProducts = quieredProducts.map((product, index) => (
     <Bike
       _id={product._id}
       name={product.name}
@@ -25,9 +37,10 @@ const List = (props) => {
   ));
 
   return (
-    <div className="listProducts" user={props.user}>
-      {mappedProducts}
-    </div>
+    <Layout user={props.user}>
+      <Search onSubmit={handleSubmit} onChange={handleSearch} />
+      <div className="listProducts">{mappedProducts}</div>
+    </Layout>
   );
 };
 

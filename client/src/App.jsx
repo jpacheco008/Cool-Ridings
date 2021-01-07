@@ -9,6 +9,8 @@ import Details from './screens/Details/Details'
 import AddItem from './screens/AddItem/AddItem'
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/users";
+import AddItem from './screens/AddItem/AddItem'
+import EditItem from './screens/EditItem/EditItem'
 
 function App() {
   const [user, setUser] = useState(null);
@@ -43,6 +45,12 @@ function App() {
         </Route>
         <Route exact path="/products/:id">
           <Details user={user} />
+        </Route>
+        <Route path='add-product'>
+          {user ? <AddItem user={user}/> : <Redirect to='/sign-up' />}
+        </Route>
+        <Route exact path='/products/:id/edit'>
+          {user ? <EditItem user={user}/> : <Redirect to='/' />}
         </Route>
       </Switch>
     </div>

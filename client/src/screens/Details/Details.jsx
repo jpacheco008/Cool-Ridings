@@ -42,7 +42,7 @@ const ProductDetail = (props) => {
             </button>
             <button
               className="delete-button"
-              onClick={() => deleteProduct(product.id)}
+              onClick={() => deleteProduct(product._id)}
             >
               Delete
             </button>

@@ -4,13 +4,13 @@ import Bike from "../../components/Bike/Bike";
 import { getProducts } from "../../services/products";
 import Search from "../../components/Search/Search";
 import Layout from "../../components/shared/Layout/Layout";
-import Sort from '../../components/Sort/Sort'
-import {AZ, ZA, lowestFirst, highestFirst} from '../../utils/Sort'
+import Sort from "../../components/Sort/Sort";
+import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/Sort";
 
 const List = (props) => {
   const [allProducts, setAllProducts] = useState([]);
   const [quieredProducts, setQuieredProducts] = useState([]);
-  const [sortType, setSortType] = useState([])
+  const [sortType, setSortType] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -21,30 +21,30 @@ const List = (props) => {
     fetchProducts();
   }, []);
 
-  const handleSort = type => {
-    setSortType(type)
+  const handleSort = (type) => {
+    setSortType(type);
     switch (type) {
       case "name-ascending":
-        setQuieredProducts(AZ(quieredProducts))
-        break
+        setQuieredProducts(AZ(quieredProducts));
+        break;
       case "name-descending":
-        setQuieredProducts(ZA(quieredProducts))
-        break
+        setQuieredProducts(ZA(quieredProducts));
+        break;
       case "price-ascending":
-        setQuieredProducts(lowestFirst(quieredProducts))
-        break
+        setQuieredProducts(lowestFirst(quieredProducts));
+        break;
       case "price-decending":
-        setQuieredProducts(highestFirst(quieredProducts))
-        break
+        setQuieredProducts(highestFirst(quieredProducts));
+        break;
       default:
-        break
+        break;
     }
-  }
+  };
 
   const handleSearch = (event) => {
     const newquieredProducts = allProducts.filter((product) =>
       product.name.toLowerCase().includes(event.target.value.toLowerCase())
-      );
+    );
     setQuieredProducts(newquieredProducts, () => handleSort(sortType));
   };
   const handleSubmit = (event) => event.preventDefault();
@@ -61,8 +61,11 @@ const List = (props) => {
 
   return (
     <Layout user={props.user}>
-      <Search onSubmit={handleSubmit} onChange={handleSearch}/>
-      <Sort onSubmit={handleSubmit} onChange={handleSort}/>
+      <div className="search-features">
+        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+        <Sort onSubmit={handleSubmit} onChange={handleSort} />
+      </div>
+
       <div className="listProducts">{mappedProducts}</div>
     </Layout>
   );

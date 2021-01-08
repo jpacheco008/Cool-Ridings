@@ -1,0 +1,11 @@
+select {
+  border-radius: 0 5px 5px 0;
+  height: 34px;
+  background-color: #272727;
+  color: white;
+  border: 1px solid rgb(250, 250, 250);
+}
+
+.sort-container {
+  display: inline;
+}

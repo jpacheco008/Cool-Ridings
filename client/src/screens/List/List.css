@@ -1,7 +1,11 @@
-
-.listProducts{
+.listProducts {
   display: flex;
   flex-flow: row wrap;
-  margin: 20px;
+  margin: 0 auto;
   justify-content: center;
+  width: 100%;
+}
+
+.search-features {
+  margin-top: 50px;
 }

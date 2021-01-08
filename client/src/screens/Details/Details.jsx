@@ -25,27 +25,24 @@ const ProductDetail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="product-detail">
-        <div className="name">{product.name}</div>
-        <img
-          className="product-detail-image"
-          src={product.imgURL}
-          alt={product.name}
-        />
-        <div className="price">{product.price}</div>
+        <div className="top-container">
+          <div className="name">{product.name}</div>
+          <img
+            className="product-detail-image"
+            src={product.imgURL}
+            alt={product.name}
+          />
+          <div className="price">{product.price}</div>
+        </div>
         <div className="details">
-          <div>{product.description}</div>
+          <div className='description'>{product.description}</div>
           <div className="buttons">
-            <button className="edit-button">
               <Link className="edit-link" to={`/products/${product._id}/edit`}>
-                Edit
+                Edit        
               </Link>
-            </button>
-            <button
-              className="delete-button"
-              onClick={() => deleteProduct(product._id)}
-            >
+              <div className="delete" onClick={() => deleteProduct(product._id)}>
               Delete
-            </button>
+              </div>
           </div>
         </div>
       </div>

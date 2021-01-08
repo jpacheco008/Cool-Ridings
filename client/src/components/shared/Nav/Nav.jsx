@@ -6,14 +6,16 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     return (
         <>
-            <div className="nav-container">
-                <h1 className="site-title">Cool Runnings</h1>
+        <div className="nav-container">
+          <Link to="/">
+          <img className="logo" src='https://i.imgur.com/2UtSIpm.png' alt='Cool Ridings'/>
+          </Link>
                 <nav>
                     <ul>
-                        <Link to="/products"><li><button className="nav-button">Browse</button></li></Link>
-                        <Link to="/add-products"><li><button className="nav-button">Add Item</button></li></Link>
-                        <Link to="/sign-up"><li><button className="nav-button">Sign Up</button></li></Link>
-                        <Link to="/sign-in"><li><button className="nav-button">Sign In</button></li></Link>
+                        <Link to="/products" className="nav-link"><li>Browse</li></Link>
+                        <Link to="/add-products" className="nav-link"><li>Add Item</li></Link>
+                        <Link to="/sign-up" className="nav-link"><li>Sign Up</li></Link>
+                        <Link to="/sign-in" className="nav-link"><li>Sign In</li></Link>
                     </ul>
                 </nav>
             </div>

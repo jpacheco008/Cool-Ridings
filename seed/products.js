@@ -4,7 +4,7 @@ const Product = require('../models/productModels')
 db.on('error', console.error.bind(console, 'MongoDB coonection error:'))
 
 const main = async () => {
-  const products = 
+  const products =
   [
     {
       "name": "Co-op Cycles CTY 1.1 Bike",
@@ -51,14 +51,14 @@ const main = async () => {
       "price":"808.78"
     },
     {
-      "name": "Super73-Z1 Electric Bike Jet Black",
-      "imgURL":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSXw93NuOKd9fHR7zdHaEoGGctOHkX4pUAhFX6mKkKaQAQDfIy0dWQZwg1i5_j7xRZxRac31fooGlo0015VKf4SxUnV8VGcRKunzltT3XFWGEo-wWM7DuwN&usqp=CAY",
-      "imgURL1": "https://cdn.shopify.com/s/files/1/1374/3231/products/Super73_Z1_SLft_Black_1200x800_31055142-14bd-4364-81f0-9c0bfb54b939_1024x1024.jpg?v=1588429565",
-      "imgURL2": "https://coolmaterial.com/wp-content/uploads/2019/12/Lithium-Cycles-Super-73-Z1-Lightweight-E-Bike-4.jpg",
-      "imgURL3": "https://coolmaterial.com/wp-content/uploads/2019/12/Lithium-Cycles-Super-73-Z1-Lightweight-E-Bike-6-1000x600.jpg",
-      "description": "The SUPER73-Z1 is a friendly entry-level electric motorbike that packs a punch. The compact frame and 500 watt internal hub motor is an excellent vehicle for anyone wanting the feel of a SUPER73 in a smaller package. This neighborhood explorer is perfect for getting around town.",
-      "price":"1260.00"
-    },   
+      "name": "SystemSix Carbon Ultegra Di2",
+      "imgURL":"https://embed.widencdn.net/img/dorelrl/z5ibezx6wy/2000px@1x/C20_C11300M_SystemSix_Crb_Ult_Di2_REP_PD.png",
+      "imgURL1": "https://embed.widencdn.net/img/dorelrl/tzhbwgfxiq/2000px@1x/C20_C11300M_SystemSix_Crb_Ult_Di2_REP_3Q.png",
+      "imgURL2": "https://embed.widencdn.net/img/dorelrl/ilkbgashja/2000px@1x/C20_C11300M_SystemSix_Crb_Ult_Di2_REP_D1.png",
+      "imgURL3": "https://embed.widencdn.net/img/dorelrl/9vfd6mvrma/2000px@1x/C20_C11300M_SystemSix_Crb_Ult_Di2_REP_D2.png",
+      "description": "SystemSix is a holistically designed, six-part system wholly dedicated to the pure pursuit of speed. It generates the least aerodynamic drag of any road bike on the market, which means more speed, in more situations, for more riders. It’s faster everywhere.",
+      "price":"7,250"
+    },
     {
       "name": "Bell Servo Adult Full Face Helmet Matte Black",
       "imgURL": "https://images-na.ssl-images-amazon.com/images/I/71dXXz0hknL._AC_SL1500_.jpg",

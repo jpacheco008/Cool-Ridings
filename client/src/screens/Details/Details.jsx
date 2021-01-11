@@ -32,17 +32,17 @@ const ProductDetail = (props) => {
             src={product.imgURL}
             alt={product.name}
           />
-          <div className="price">{product.price}</div>
+          <div className="price">${product.price}</div>
         </div>
         <div className="details">
-          <div className='description'>{product.description}</div>
+          <div className="description">{product.description}</div>
           <div className="buttons">
-              <Link className="edit-link" to={`/products/${product._id}/edit`}>
-                Edit        
-              </Link>
-              <div className="delete" onClick={() => deleteProduct(product._id)}>
+            <Link className="edit-link" to={`/products/${product._id}/edit`}>
+              Edit
+            </Link>
+            <div className="delete" onClick={() => deleteProduct(product._id)}>
               Delete
-              </div>
+            </div>
           </div>
         </div>
       </div>

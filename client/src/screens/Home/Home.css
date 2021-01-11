@@ -10,13 +10,40 @@
  height: 200px;
  width: 300px;
  background-color: white;
+ 
 }
-
-h2{
-    margin: 0;
-    color:white;
+p{
+    text:white
 }
+ h2{
+     color:black;
+     margin:0;
+     text-align: center;
+ }
+ h1{
+     color:white;
+ }
 
-#block-one,#block-two,#block-three{
-    /* background-image: url('https://i.imgur.com/OE1r3P4.jpg?1'); */
+#block-one{
+ 
+}
+#block-two{
+
+}
+#block-three{
+  
+}
+.container-two{
+    display:flex;
+    justify-content: space-around;
+}
+#container-two-pic1, #container-two-pic2{
+    height: 600px;
+    width: 500px; 
+}
+#container-two-pic1{
+    background-image: url('https://i.imgur.com/bRNKOd7.png');
+}
+#container-two-pic2{
+    background-image: url('https://i.imgur.com/VNQClG0.png');
 }

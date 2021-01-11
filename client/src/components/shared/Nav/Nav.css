@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.logo{
+  width: 100px;
+  height: 100px;
+  margin: auto 40px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#03CFD1;
+    height:70px;
+    border-bottom: 1px groove black;
+}
+li{
+    display: inline;
+}
+.nav-link{
+    color: black;
+    margin: 10px;
+    font-family: 'Audiowide', cursive;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  
+}
+
+.site-title{
+    color: white;
+
+}
+
+nav ul{
+  display: flex;
+  flex-flow: row;
+  margin: auto 40px;
+  padding: 0;
+}
+
+.welcome{
+  font-family: 'Audiowide', cursive;
+}
+
+@media only screen and (max-width: 601px) {
+  .logo{
+    width: 50px;
+    height: 50px;
+    margin: auto 10px;
+  }
+  nav ul{
+    margin: auto 10px;
+  }
+  li{
+    font-size: 8px;
+}
+.welcome{
+  font-size: 8px;
+}
+.nav-link{
+  margin: 2px;
+}
+}

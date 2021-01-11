@@ -42,8 +42,8 @@ const Carousel = () => {
     return (
         <div>
             <div className='carousel' style={{ backgroundImage: `url(${carouselPics[picId]})` }}>
-                <button className="previous" onClick={previousPic}>Prev</button>
-                <button className="next" onClick={nextPic}>Next</button>
+                {/* <button className="previous" onClick={previousPic}>Prev</button>
+                <button className="next" onClick={nextPic}>Next</button> */}
 
             </div>
         </div>

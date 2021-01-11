@@ -1,0 +1,10 @@
+.layout{
+  display: flex;
+  flex-flow: column;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

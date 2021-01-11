@@ -11,8 +11,7 @@
     align-items: center;
     background-color:#03CFD1;
     height:70px;
-    border: 1px groove black;
-    border-radius: 2px;
+    border-bottom: 1px groove black;
 }
 li{
     display: inline;
@@ -38,4 +37,8 @@ nav ul{
   display: flex;
   flex-flow: row;
 
+}
+
+.welcome{
+  font-family: 'Audiowide', cursive;
 }

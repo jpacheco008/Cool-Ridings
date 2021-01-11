@@ -24,22 +24,19 @@ const Nav = (props) => {
             <Link to="/add-products" className="nav-link">
               <li>Add Item</li>
             </Link>
-            {props.user ? (
+            { !props.user ?
+              <div className='signins'>
+              <Link to="/sign-in" className="nav-link"><li>Sign In</li></Link>
+              <Link to="/sign-up" className="nav-link">
+              <li>Sign Up</li>
+              </Link>
+              </div>            
+              :
               <Link to="/sign-out" className="nav-link">
                 <li>Sign Out</li>
-              </Link>
-            ) : (
-              (
-                <Link to="/sign-up" className="nav-link">
-                  <li>Sign Up</li>
-                </Link>
-              ) +
-              (
-                <Link to="/sign-in" className="nav-link">
-                  <li>Sign In</li>
-                </Link>
-              )
-            )}
+            </Link>   
+              
+            }
           </ul>
         </nav>
       </div>

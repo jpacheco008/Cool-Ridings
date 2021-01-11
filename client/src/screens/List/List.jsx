@@ -6,6 +6,7 @@ import Search from "../../components/Search/Search";
 import Layout from "../../components/shared/Layout/Layout";
 import Sort from "../../components/Sort/Sort";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/Sort";
+import carouselPicTwo from "../../images/carousel-pic-two.png";
 
 const List = (props) => {
   const [allProducts, setAllProducts] = useState([]);
@@ -62,11 +63,17 @@ const List = (props) => {
   return (
     <Layout user={props.user}>
       <div className="search-features">
+        <h3 className="list-title">All Bikes</h3>
         <Search onSubmit={handleSubmit} onChange={handleSearch} />
         <Sort onSubmit={handleSubmit} onChange={handleSort} />
       </div>
 
-      <div className="listProducts">{mappedProducts}</div>
+      <div className="listProducts">
+        {mappedProducts}
+        {/* <div className="promo-ad-div">
+          <img src={carouselPicTwo} alt="" />
+        </div> */}
+      </div>
     </Layout>
   );
 };

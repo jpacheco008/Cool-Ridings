@@ -39,7 +39,7 @@ const main = async () => {
       "imgURL2": "https://embed.widencdn.net/img/dorelrl/mr7woapxvh/2000px@1x/C20_C11100M_SystemSix_HM_D_A_Di2_BBQ_3Q.png",
       "imgURL3": "https://embed.widencdn.net/img/dorelrl/qw5s5g5p19/2000px@1x/C20_C11100M_SystemSix_HM_D-A_Di2_BBQ_D1.png",
       "description": "Faster everywhere. The fastest UCI-legal road bike in the world. More speed with less effort. Simple as that.",
-      "price":"12,000"
+      "price":"12,000.00"
     },
     {
       "name": "Hyper E-Ride Electric Mountain Bike",

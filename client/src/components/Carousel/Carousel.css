@@ -1,0 +1,7 @@
+.carousel{
+    height: 70vh;
+    width: 100vw;
+    background-size:cover ;
+    margin:0 auto;
+    margin-top:50px;
+}

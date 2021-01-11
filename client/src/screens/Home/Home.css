@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500;700&family=Sarpanch:wght@800&display=swap');
 
+.title{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    margin-bottom: 50px;
+}
+span{
+    font-size: 60px;
+    color:white;
+}
+#span-two{
+  font-size: 30px;
+  color:white;
+}
 .container{
     display: flex;
     justify-content: space-evenly;
@@ -9,14 +24,15 @@
 .description{
  height: 200px;
  width: 300px;
- background-color: white;
+ background-color: black;
+ color:white;
  
 }
 p{
     text:white
 }
  h2{
-     color:black;
+     color:white;
      margin:0;
      text-align: center;
  }
@@ -43,7 +59,18 @@ p{
 }
 #container-two-pic1{
     background-image: url('https://i.imgur.com/bRNKOd7.png');
+ 
 }
 #container-two-pic2{
     background-image: url('https://i.imgur.com/VNQClG0.png');
+}
+
+.promotion-button{
+    display: inline;
+    height:30px;
+    width: 180px;
+    border-radius: 20px;
+    margin-top: 380px;
+    background-color: #03CFD1;
+    color:white;
 }

@@ -81,13 +81,6 @@ const main = async () => {
       "description":"The Deep Winter Gloves are the warmest pair we make, tested extensively in wet and cold weather in Norway and designed to withstand the most extreme riding conditions. For complete integration with the sleeves of your jacket, the gloves feature a two-layer cuff design. A slim-fitting knitted merino cuff slides beneath the jacket sleeve while the long exterior cuff forms a protective outer layer on top. The main body of the glove is sealed with a fully waterproof yet breathable membrane and lined with a warm fleece fabric on the inside. Insulation is positioned on the back of the hand for additional warmth while the fingers are pre-shaped for improved dexterity and articulation while braking and shifting. The palm is constructed of a hard-wearing, abrasion-resistant leather with carefully positioned gel padding for a comfortable, secure grip on the handlebars, whatever the weather. A grosgrain puller tab on the inner cuff makes putting the glove on easy while the thumb incorporates a convenient nose wipe. For visibility when signalling, a reflective panel is positioned on the little finger.",
       "price":"190.00"
     },
-    {
-      "name": "Rechargeable Lighted Gloves",
-      "imgURL": "https://images.ctfassets.net/5lo27vrr3lb5/12h9vWyLcbE1boy70P87W2/e2ef957a10815203ff787959b47ef366/207394-p1.jpg?q=80",
-      "imgURL2": "https://images.ctfassets.net/5lo27vrr3lb5/79HmpA49grFP7Oo41imxcN/25c9627f9499848561aeef15cb41768a/207394-p2.jpg?q=80",
-      "description":"Rechargeable Lighted Gloves are the hands-free wearable safety lights for runners, cyclists, dog walkers, hikers, campers and others who are active after dark. Each glove has a Velcro pocket that securely holds a rechargeable LED light, providing a 270° radial arc of light that’s visible up to a half mile away. Lights last 8 to 10 hours on a full charge. Set includes two gloves, two lights and a dual USB charging cable. Unisex design, available in Black in Small, Medium, Large and XL.",
-      "price":"59.99"
-    },
     ]
   await Product.insertMany(products)
   console.log("Created products")

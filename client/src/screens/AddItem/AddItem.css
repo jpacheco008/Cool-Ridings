@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.add-item-container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #272727;
+  margin-top: 60px;
+  font-family: "Audiowide", cursive;
+  border-radius: 8px;
+  box-shadow: -10px 5px 5px #585858;
+}
+
+.add-item-container input {
+  margin: 10px;
+  width: 300px;
+  height: 20px;
+}
+
+.add-item-container textarea {
+  margin: 20px;
+  resize: none;
+}
+
+.add-item-button {
+  background-color: black;
+  color: white;
+  font-family: "Audiowide", cursive;
+  border-radius: 4px;
+}
+
+.add-item-title {
+  color: white;
+  letter-spacing: 5px;
+}

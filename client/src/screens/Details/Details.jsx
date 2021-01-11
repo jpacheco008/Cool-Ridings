@@ -39,12 +39,12 @@ const ProductDetail = (props) => {
         <div className="details">
           <ReadMoreText lines={3} text={product.description}/>
           <div className="buttons">
-              <Link className="edit-link" to={`/products/${product._id}/edit`}>
-                Edit        
-              </Link>
-              <div className="delete" onClick={() => deleteProduct(product._id)}>
+            <Link className="edit-link" to={`/products/${product._id}/edit`}>
+              Edit
+            </Link>
+            <div className="delete" onClick={() => deleteProduct(product._id)}>
               Delete
-              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -36,9 +36,30 @@ li{
 nav ul{
   display: flex;
   flex-flow: row;
-
+  margin: auto 40px;
+  padding: 0;
 }
 
 .welcome{
   font-family: 'Audiowide', cursive;
+}
+
+@media only screen and (max-width: 601px) {
+  .logo{
+    width: 50px;
+    height: 50px;
+    margin: auto 10px;
+  }
+  nav ul{
+    margin: auto 10px;
+  }
+  li{
+    font-size: 8px;
+}
+.welcome{
+  font-size: 8px;
+}
+.nav-link{
+  margin: 2px;
+}
 }

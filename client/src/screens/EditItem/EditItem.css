@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap");
+
+.edit-box{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+/* .edit-image-box{
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin: 0%;
+} */
+.edit-form-name{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.edit-name{
+  height: 30px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+.edit-form-input-image{
+  align-self: flex-end;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+.edit-form-price{
+  align-self: flex-end;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+.edit-form{
+  margin: 20px 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.edit-description{
+  text-align: justify;
+  line-height: 1.6;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+.edit-submit-button{
+  width: 200px;
+  margin: 10px auto;
+}
+.edit-label{
+  color: white;
+  margin: 5px;
+}
+@media only screen and (max-width: 1200px){
+body{
+  background-color: blue;
+}
+}
+
+@media only screen and (max-width: 800px){
+  body{
+    background-color: red;
+  }
+}

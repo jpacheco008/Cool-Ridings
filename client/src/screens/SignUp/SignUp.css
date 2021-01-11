@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.signup-form-container{
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #03CFD1;
+  margin-top: 60px;
+  font-family: 'Audiowide', cursive;
+  border-radius: 8px;
+  box-shadow: -10px 5px 5px #585858;
+}
+.sign-up-title{
+  color: black;
+}
+.sign-up-input{
+  margin: 8px;
+}
+.sign-up-button{
+  background-color: black;
+  color: white;
+  font-family: 'Audiowide', cursive;
+  border-radius: 4px;
+}

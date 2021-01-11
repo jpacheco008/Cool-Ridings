@@ -3,6 +3,8 @@ import "./Details.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
 import { useParams, Link } from "react-router-dom";
+import ReadMoreText from 'read-more-less-react'
+import 'read-more-less-react/dist/index.css';
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -21,7 +23,7 @@ const ProductDetail = (props) => {
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
-
+  
   return (
     <Layout user={props.user}>
       <div className="product-detail">
@@ -32,10 +34,10 @@ const ProductDetail = (props) => {
             src={product.imgURL}
             alt={product.name}
           />
-          <div className="price">{product.price}</div>
+          <div className="detail-price">${product.price}</div>
         </div>
         <div className="details">
-          <div className='description'>{product.description}</div>
+          <ReadMoreText lines={3} text={product.description}/>
           <div className="buttons">
               <Link className="edit-link" to={`/products/${product._id}/edit`}>
                 Edit        

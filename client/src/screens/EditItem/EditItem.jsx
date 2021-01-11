@@ -44,9 +44,23 @@ const EditItem = (props) => {
   return (
     <Layout user={props.user}>
       <div className="edit-box">
-        <div className="image-box">
+        <div className="edit-image-box">
+          <form className="edit-form-name" onSubmit={handleSubmit}>
+          <label className="edit-label">Name</label>
+          <textarea
+              className="edit-name"
+              rows={5}
+            placeholder="Name"
+            value={item.name}
+            name="name"
+            required
+            autoFocus
+            onChange={handleChange}
+            />
+            </form>
           <img className="edit-img" src={item.imgURL} alt={item.name} />
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="edit-form-input-image">
+            <label className="edit-label">Image URL</label>
             <input
               className="edit-input-image"
               placeholder="Image Link"
@@ -56,38 +70,34 @@ const EditItem = (props) => {
               onChange={handleChange}
             />
           </form>
-        </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
-          <input
-            className="edit-name"
-            placeholder="Name"
-            value={item.name}
-            name="name"
-            required
-            autoFocus
-            onChange={handleChange}
-          />
+          <form className="edit-form-price">
+          <label className="edit-label">Price</label>
           <input
             className="edit-price"
-            placeholder="Price"
             placeholder="Price"
             value={item.price}
             name="price"
             required
             onChange={handleChange}
-          />
+            />
+            </form>
+        </div>
+        <form className="edit-form" onSubmit={handleSubmit}>          
           <textarea
             className="edit-description"
+            rows={10}
+            cols={70}
             placeholder="Description"
             value={item.description}
             name="description"
             required
             onChange={handleChange}
-          />
-          <button type="submit" className="submit-button">
+            />
+          <button type="submit" className="edit-submit-button">
             Save Changes
           </button>
         </form>
+           
       </div>
     </Layout>
   );

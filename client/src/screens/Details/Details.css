@@ -1,89 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Playfair+Display+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap");
 
-.product-detail{
-display: flex;
-flex-flow: column;
-justify-content: space-around;
+.product-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
-.top-container{
+.top-container {
   background-color: white;
   display: flex;
   flex-flow: row;
   justify-content: center;
   margin: 0%;
 }
-.name{
+.name {
   font-weight: 800;
   margin: 20px 50px 0 20px;
   margin-top: 20px;
   margin-left: 20px;
   width: 200px;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   font-size: 20px;
 }
-.product-detail-image{
+.product-detail-image {
   margin: 30px 100px;
   width: 600px;
   max-height: 400px;
   object-fit: contain;
 }
-.price{
+.detail-price {
   align-self: flex-end;
   font-weight: 500;
   margin: 0 20px 20px 100px;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   font-size: 20px;
   font-weight: 800px;
+  color: black;
 }
-.details{
+.details {
   background-color: #272727;
   width: 800px;
   margin: 50px auto;
   border-radius: 4px;
 }
-.description{
- margin: 20px 30px;
- text-align: justify;
- color: white;
- line-height: 1.6;
- /* font-family: 'Playfair Display SC', serif; */
- font-family: 'Darker Grotesque', sans-serif;
- font-size: 20px;
+.description {
+  margin: 20px 30px;
+  text-align: justify;
+  color: white;
+  line-height: 1.6;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
 }
-
-.buttons{
+.rm-typography {
+  line-height: 1.6;
+  margin: 20px 30px 2px 30px;
+  text-align: justify;
+  color: white;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+.rm-action-button-container > button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+.rm-action-button-container > button:hover {
+  color: #03cfd1;
+}
+.buttons {
   display: flex;
   flex-flow: row;
   justify-content: center;
 }
-.edit-button{
-  background-color: #03CFD1;
-  margin-right: 20px;
-  width: 70px;
-  height: 25px;
-  text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid black;
-  transition-duration: .4s;
-  font-weight: 800;
-}
-.edit-button:hover{
-  background-color: #272727;
-  color: #03CFD1;
-  filter: contrast(200%)
-}
-.edit-link{
+
+.edit-link {
   color: white;
   font-size: 15px;
   text-decoration: none;
   margin: 10px;
   font-size: 20px;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
-.edit-link:hover{
-  color: #03CFD1;
+.edit-link:hover {
+  color: #03cfd1;
 }
 .delete {
   color: white;
@@ -91,8 +94,9 @@ justify-content: space-around;
   text-decoration: none;
   margin: 10px;
   font-size: 20px;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
-.delete:hover{
-  color: #03CFD1;
+.delete:hover {
+  color: #03cfd1;
+  cursor: pointer;
 }

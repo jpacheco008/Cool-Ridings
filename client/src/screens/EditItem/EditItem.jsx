@@ -46,18 +46,18 @@ const EditItem = (props) => {
       <div className="edit-box">
         <div className="edit-image-box">
           <form className="edit-form-name" onSubmit={handleSubmit}>
-          <label className="edit-label">Name</label>
-          <textarea
+            <label className="edit-label">Name</label>
+            <textarea
               className="edit-name"
               rows={5}
-            placeholder="Name"
-            value={item.name}
-            name="name"
-            required
-            autoFocus
-            onChange={handleChange}
+              placeholder="Name"
+              value={item.name}
+              name="name"
+              required
+              autoFocus
+              onChange={handleChange}
             />
-            </form>
+          </form>
           <img className="edit-img" src={item.imgURL} alt={item.name} />
           <form onSubmit={handleSubmit} className="edit-form-input-image">
             <label className="edit-label">Image URL</label>
@@ -71,18 +71,18 @@ const EditItem = (props) => {
             />
           </form>
           <form className="edit-form-price">
-          <label className="edit-label">Price</label>
-          <input
-            className="edit-price"
-            placeholder="Price"
-            value={item.price}
-            name="price"
-            required
-            onChange={handleChange}
+            <label className="edit-label">Price</label>
+            <input
+              className="edit-price"
+              placeholder="Price"
+              value={item.price}
+              name="price"
+              required
+              onChange={handleChange}
             />
-            </form>
+          </form>
         </div>
-        <form className="edit-form" onSubmit={handleSubmit}>          
+        <form className="edit-form" onSubmit={handleSubmit}>
           <textarea
             className="edit-description"
             rows={10}
@@ -92,12 +92,11 @@ const EditItem = (props) => {
             name="description"
             required
             onChange={handleChange}
-            />
+          />
           <button type="submit" className="edit-submit-button">
             Save Changes
           </button>
         </form>
-           
       </div>
     </Layout>
   );

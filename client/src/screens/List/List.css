@@ -17,4 +17,11 @@
 }
 
 .promo-ad-div {
+  width: 208%;
+  height: 400px;
+}
+
+.promo-ad-div img {
+  width: 100%;
+  height: 100%;
 }

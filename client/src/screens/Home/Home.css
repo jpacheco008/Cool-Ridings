@@ -28,9 +28,7 @@ span{
  color:white;
  
 }
-p{
-    text:white
-}
+
  h2{
      color:white;
      margin:0;
@@ -40,15 +38,7 @@ p{
      color:white;
  }
 
-#block-one{
- 
-}
-#block-two{
 
-}
-#block-three{
-  
-}
 .container-two{
     display:flex;
     justify-content: space-around;
@@ -74,3 +64,56 @@ p{
     background-color: #03CFD1;
     color:white;
 }
+
+@media screen and ( max-width: 1020px){
+    #span-two{
+        font-size: 25px;
+    }
+    .div-title{
+        font-size: 25px;
+    }
+    #container-two-pic1, #container-two-pic2{
+     height: 500px;
+     width:420px ;
+ }
+   
+ }
+
+
+@media screen and ( max-width: 800px){
+    .title{
+        margin-bottom: 30px;
+    }
+    span{
+        font-size: 50px;
+    }
+
+   .text{
+       font-size:18px;
+   }
+
+   .div-title{
+       font-size: 22px;
+   }
+
+   .container-two{
+       margin-bottom: -80px;
+   }
+
+   #container-two-pic1, #container-two-pic2{
+       height: 500px;
+       width:350px ;
+   }
+   .promotion{
+       font-size: 25px;
+   }
+
+   .promotion-button{
+       margin-top:340px ;
+   }
+}
+ 
+ 
+
+
+

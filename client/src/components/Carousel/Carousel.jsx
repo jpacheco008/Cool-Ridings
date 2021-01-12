@@ -6,36 +6,36 @@ import carouselPicFour from "../../images/carousel-pic-four.png";
 import "./Carousel.css";
 
 const Carousel = () => {
-  const [carouselPics] = useState([
-    carouselPicOne,
-    carouselPicTwo,
-    carouselPicThree,
-    carouselPicFour,
-  ]);
-  const [picId, setPicId] = useState(0);
+    const [carouselPics] = useState([
+        carouselPicOne,
+        carouselPicTwo,
+        carouselPicThree,
+        carouselPicFour,
+    ]);
+    const [picId, setPicId] = useState(0);
 
-  useEffect(() => {
-    if (true) {
-      const interval = setInterval(nextPic, 4000);
-      return () => clearInterval(interval);
-    }
-  });
+    useEffect(() => {
+        if (true) {
+            const interval = setInterval(nextPic, 4000);
+            return () => clearInterval(interval);
+        }
+    });
 
-  const nextPic = () => {
-    if (picId === carouselPics.length - 1) {
-      setPicId(0);
-    } else {
-      setPicId(picId + 1);
-    }
-  };
-  return (
-    <div>
-      <div
-        className="carousel"
-        style={{ backgroundImage: `url(${carouselPics[picId]})` }}
-      ></div>
-    </div>
-  );
+    const nextPic = () => {
+        if (picId === carouselPics.length - 1) {
+            setPicId(0);
+        } else {
+            setPicId(picId + 1);
+        }
+    };
+    return (
+        <div>
+            <div
+                className="carousel"
+                style={{ backgroundImage: `url(${carouselPics[picId]})` }}
+            ></div>
+        </div>
+    );
 };
 
 export default Carousel;

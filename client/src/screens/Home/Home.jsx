@@ -21,7 +21,7 @@ const Home = (props) => {
 
         <div className="container">
           <div id='block-one' className='description'>
-            <h2>What we do</h2><hr />
+            <h2 className="div-title">What we do</h2><hr />
             <div className='text'>
               orem ipsum dolor sit amet, consectetur
               adipiscing elit. Quisque nisl eros,
@@ -31,7 +31,7 @@ const Home = (props) => {
 
 
           <div id='block-two' className='description'>
-            <h2>The Experience</h2><hr />
+            <h2 className="div-title">The Experience</h2><hr />
             <div className='text'>
               orem ipsum dolor sit amet, consectetur
               adipiscing elit. Quisque nisl eros,
@@ -41,7 +41,7 @@ const Home = (props) => {
 
 
           <div id='block-three' className='description'>
-            <h2>The Elite</h2><hr />
+            <h2 className="div-title">The Elite</h2><hr />
             <div className='text'>
               orem ipsum dolor sit amet, consectetur
               adipiscing elit. Quisque nisl eros,
@@ -51,7 +51,7 @@ const Home = (props) => {
 
 
           <div id='block-four' className='description'>
-            <h2>Dominate</h2><hr />
+            <h2 className="div-title">Dominate</h2><hr />
             <div className='text'>
               orem ipsum dolor sit amet, consectetur
               adipiscing elit. Quisque nisl eros,
@@ -62,12 +62,12 @@ const Home = (props) => {
 
         <div className="container-two">
           <div id='container-two-pic1'>
-            <h1>The ultimate craftsmenship meet the greatest quality to create perfection</h1>
+            <h1 className="promotion">The ultimate craftsmenship meet the greatest quality to create perfection</h1>
             <button className="promotion-button">Join and Sign Up</button>
           </div>
 
           <div id='container-two-pic2'>
-            <h1>Start 2021 on the right foot with our New Year's sales and special offers</h1>
+            <h1 className="promotion">Start 2021 on the right foot with our New Year's sales and special offers</h1>
             <button className="promotion-button">Check out special offers</button>
           </div>
         </div>

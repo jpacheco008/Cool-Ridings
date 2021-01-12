@@ -7,7 +7,7 @@ import carouselPicFour from '../../images/carousel-pic-four.png'
 import './Carousel.css'
 
 const Carousel = () => {
-    const [carouselPics, setCarouselPics] = useState([
+    const [carouselPics] = useState([
         carouselPicOne,
         carouselPicTwo,
         carouselPicThree,

@@ -70,7 +70,7 @@ const List = (props) => {
 
       <div className="listProducts">
         <div className="promo-ad-div">
-          <img src={carouselPicTwo} alt="" />
+          <img className="promo-ad-img" src={carouselPicTwo} alt="" />
         </div>
         {mappedProducts}
       </div>

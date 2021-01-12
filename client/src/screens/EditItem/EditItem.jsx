@@ -49,7 +49,8 @@ const EditItem = (props) => {
             <label className="edit-label">Name</label>
             <textarea
               className="edit-name"
-              rows={5}
+              rows={6}
+              cols={50}
               placeholder="Name"
               value={item.name}
               name="name"

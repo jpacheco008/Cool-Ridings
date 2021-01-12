@@ -28,9 +28,7 @@ span{
  color:white;
  
 }
-p{
-    text:white
-}
+
  h2{
      color:white;
      margin:0;
@@ -40,15 +38,7 @@ p{
      color:white;
  }
 
-#block-one{
- 
-}
-#block-two{
 
-}
-#block-three{
-  
-}
 .container-two{
     display:flex;
     justify-content: space-around;

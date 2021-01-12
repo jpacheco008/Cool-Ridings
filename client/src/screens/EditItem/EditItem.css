@@ -1,68 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap");
 
-.edit-box{
+.edit-box {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  background-color: #272727;
+  box-shadow: -10px 5px 5px #585858;
+  width: 70%;
+  margin: 30px auto;
+  border-radius: 8px;
+  font-family: "Audiowide", cursive;
 }
 
-/* .edit-image-box{
-  background-color: white;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  margin: 0%;
-} */
-.edit-form-name{
+.edit-form-name {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
 }
-.edit-name{
+
+.edit-form-name textarea {
+  resize: none;
+  width: 60%;
+}
+.edit-name {
   height: 30px;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 20px;
+  margin: 20px;
 }
-.edit-form-input-image{
+.edit-img {
+  width: 50%;
+  border-radius: 5px;
+}
+.edit-form-input-image {
   align-self: flex-end;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 20px;
 }
-.edit-form-price{
+.edit-input-image {
+  width: 40%;
+}
+.edit-form-price {
   align-self: flex-end;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 20px;
 }
 
-.edit-form{
+.edit-form {
   margin: 20px 30px;
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
-.edit-description{
+.edit-description {
   text-align: justify;
   line-height: 1.6;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 20px;
+  width: 100%;
 }
-.edit-submit-button{
+.edit-submit-button {
   width: 200px;
   margin: 10px auto;
+  background-color: black;
+  color: white;
+  font-family: "Audiowide", cursive;
+  border-radius: 4px;
 }
-.edit-label{
+.edit-label {
   color: white;
   margin: 5px;
 }
-/* @media only screen and (max-width: 1200px){
-body{
-  background-color: blue;
-}
-}
-
-@media only screen and (max-width: 800px){
-  body{
-    background-color: red;
-  }
-} */

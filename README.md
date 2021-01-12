@@ -12,7 +12,7 @@ This full stack app is a bike shop with full front end and back end CRUD with au
 
 ## Component Hierarchy
 
-![Hierarchy](https://github.com/jpacheco008/Cool-Ridings/blob/development/P3%20Cool%20Ridings%402x.png)
+![Hierarchy](https://github.com/jpacheco008/Cool-Ridings/blob/main/P3%20Cool%20Ridings.png)
 
 ## API and Data Sample
 

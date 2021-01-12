@@ -54,16 +54,26 @@ const ProductDetail = (props) => {
             ""
           )}
         </div>
-        <div className='detail-promotion-container'>
-          <div className='promotion'>
-          <img className='detail-promotion-logos' src='https://www.freeiconspng.com/thumbs/free-shipping-png/free-shipping-fast-icon-png-26.png' alt=''/>
-            <p className='promotion-message'>
-            Get Free Shipping on all orders!
+        <div className="detail-promotion-container">
+          <div className="promotion">
+            <img
+              className="detail-promotion-logos"
+              src="https://www.freeiconspng.com/thumbs/free-shipping-png/free-shipping-fast-icon-png-26.png"
+              alt=""
+            />
+            <p className="promotion-message">
+              Get Free Shipping on all orders!
             </p>
           </div>
-          <div lassName='promotion'>
-          <img className='detail-promotion-logos' src='https://www.freeiconspng.com/uploads/lifetime-warranty-icon-png-13.png' alt=''/>
-            <p className='promotion-message'>We will fix any defect on any of our products!</p>
+          <div className="promotion">
+            <img
+              className="detail-promotion-logos"
+              src="https://www.freeiconspng.com/uploads/lifetime-warranty-icon-png-13.png"
+              alt=""
+            />
+            <p className="promotion-message">
+              We will fix any defect on any of our products!
+            </p>
           </div>
         </div>
       </div>

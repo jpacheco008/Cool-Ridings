@@ -57,7 +57,7 @@ const main = async () => {
       "imgURL2": "https://embed.widencdn.net/img/dorelrl/ilkbgashja/2000px@1x/C20_C11300M_SystemSix_Crb_Ult_Di2_REP_D1.png",
       "imgURL3": "https://embed.widencdn.net/img/dorelrl/9vfd6mvrma/2000px@1x/C20_C11300M_SystemSix_Crb_Ult_Di2_REP_D2.png",
       "description": "SystemSix is a holistically designed, six-part system wholly dedicated to the pure pursuit of speed. It generates the least aerodynamic drag of any road bike on the market, which means more speed, in more situations, for more riders. It’s faster everywhere.",
-      "price":"7,250"
+      "price":"7,250.00"
     },
     {
       "name": "Bell Servo Adult Full Face Helmet Matte Black",

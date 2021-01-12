@@ -43,6 +43,10 @@ nav ul{
 .welcome{
   font-family: 'Audiowide', cursive;
 }
+.signins{
+  display: flex;
+  align-items: center;
+}
 
 @media only screen and (max-width: 601px) {
   .logo{

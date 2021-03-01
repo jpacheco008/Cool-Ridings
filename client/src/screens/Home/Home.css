@@ -81,11 +81,14 @@ span{
 
 
 @media screen and ( max-width: 800px){
+    .carousel {
+      width: 300px;
+    }
     .title{
         margin-bottom: 30px;
     }
     span{
-        font-size: 50px;
+        font-size: 24px;
     }
 
    .text{
@@ -95,21 +98,35 @@ span{
    .div-title{
        font-size: 22px;
    }
+   .container {
+     display: flex;
+     flex-direction: column;
+    }
+    .description {
+     width: 90vw;
+
+   }
 
    .container-two{
        margin-bottom: -80px;
+       padding: 2px;
    }
 
    #container-two-pic1, #container-two-pic2{
        height: 500px;
-       width:350px ;
+       width:150px ;
+   }
+   #container-two-pic1 h1, #container-two-pic2 h1 {
+     font-size: 1em;
    }
    .promotion{
        font-size: 25px;
    }
 
    .promotion-button{
-       margin-top:340px ;
+       margin-top:270px;
+       width: 120px;
+       height: 45px;
    }
 }
  
